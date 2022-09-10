@@ -1,0 +1,216 @@
+.h-container
+{
+  width: 150vh;
+  height: 100vh;
+  position: relative;
+  left: -2rem;
+  top: 1rem;
+  display: flex;
+  flex-direction: row;
+  background-color: beige;
+}
+.photoUpdate
+{
+  display: none;
+}
+.h-left
+{
+  width: 60%;
+  padding: 20px;
+  position: relative;
+  top: 8rem;
+  text-align: justify;
+  text-shadow: 0 10px 8px rgb(44, 43, 43);
+}
+
+.h-left>h1
+{
+  color: orangered;
+  font-family: fantasy;
+  letter-spacing: 5px;
+  text-align: center;
+  font-size: 60px;
+}
+.h-left>h4
+{
+  position: absolute;
+  top: 25px;
+  left: 5.5rem;
+}
+.h-left>h3
+{
+  position: absolute;
+  left: 20rem;
+  top: 9rem;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.h-left>p
+{
+  border: 1px solid lightgrey;
+  padding: 20px;
+  margin-left: 50px;
+  border-radius: 10px;
+  line-height: 25px;
+  color: rgb(155, 143, 143);
+  text-shadow: 0 5px 8px rgb(154, 151, 151);
+  font-weight: bold;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.btn-contain
+{
+  padding: 20px;
+  word-spacing: 20px;
+  text-align: center;
+  margin-left: 50px;
+}
+.btn-contain>Button
+{
+  width: 150px;
+  padding: 10px;
+  background-color: rgb(7, 52, 56);
+  color: azure;
+  font-weight: 500;
+  font-family:sans-serif;
+  letter-spacing: 1px;
+  border: none;
+  border-radius: 10px;
+  font-size: 12px;
+  box-shadow: 0 5px 5px 0 rgba(104, 100, 100, 0.8);
+}
+.btn-contain>a>Button
+{
+  width: 150px;
+  padding: 10px;
+  background-color: rgb(7, 52, 56);
+  color: azure;
+  font-weight: 500;
+  font-family:sans-serif;
+  letter-spacing: 1px;
+  border: none;
+  border-radius: 10px;
+  font-size: 12px;
+  box-shadow: 0 5px 5px 0 rgba(104, 100, 100, 0.8);
+}
+.btn-contain>Button:hover
+{
+  background-color: orangered;
+  cursor: pointer;
+}
+.btn-contain>a>Button:hover
+{
+  background-color: orangered;
+  cursor: pointer;
+}
+
+.h-right
+{
+  width: 50%;
+  text-align: center;
+}
+
+.h-sr>img
+{
+  width: 330px;
+  height: 330px;
+  border-radius: 100%;
+  position: relative;
+  top: 8rem;
+  box-shadow: 0 10px 20px 0 rgba(4, 82, 77, 0.8);
+}
+.dailog
+{
+  position: fixed;
+  left: 58%;
+  top:17%;
+  z-index: 1;
+  width:50vh;
+  border-radius: 10px;
+  height: 500px;
+  background-color: rgba(255, 255, 255, 0.911);
+  padding: 20px;
+}
+
+
+@media screen and (max-width:480px)
+{
+  .h-container
+  {
+    height:fit-content;
+    display: flex;
+    flex-direction: column-reverse;
+    background-color: rgb(7, 52, 56);
+    transform: scale(70%);
+    margin-top:-12rem;
+    margin-left: -14rem;
+    padding: 10px;
+  }
+  .h-right
+  {
+    position: relative;
+    top:-5rem;
+    justify-content: center;
+    left: 4.4rem;
+    text-align: center;
+  }
+  .h-left
+  {
+    position: relative;
+    top:-5rem;
+  }
+  .h-left>h4
+  {
+    margin-left: 20px;
+    font-size: larger;
+    color: antiquewhite;
+  }
+  .h-left>h3
+  {
+    font-size: larger;
+    color: antiquewhite;
+  }
+  .h-left>h1
+  {
+    margin-left: 2.7rem;
+  }
+  .btn-contain>a>Button
+  {
+    background-color: orangered;
+    color: whitesmoke;
+    font-size: 13px;
+    font-weight: bold;
+    box-shadow: 0 10px 10px 0 black;
+  }
+  .btn-contain>Button
+  {
+    background-color: orangered;
+    color: whitesmoke;
+    font-size: 13px;
+    box-shadow: 0 10px 10px 0 black;
+    font-weight: bold;
+  }
+  .dailog
+  {
+    width: fit-content;
+    margin-left: -29rem;
+    margin-top: 4rem;
+    transform: scale(130%);
+  }
+  .h-left>p
+  {
+    width: 450px;
+    color: antiquewhite;
+    text-shadow: 0 5px 5px black;
+    font-size: 18px;
+    margin-left: 6rem;
+  }
+  .photoUpdate
+  {
+    display: block;
+  }
+  .View-container
+  {
+    margin-left: 3rem;
+    margin-top: 7rem;
+    font-size: 20px;
+  }
+}

@@ -1,0 +1,40 @@
+.App
+{
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  padding-left: 1rem;
+  overflow-x: hidden;
+}
+.A-left
+{
+  position: fixed;
+}
+.A-right
+{
+  position:relative;
+  left: 21rem;
+}
+.backTop
+{
+  border-radius: 100%;
+  box-shadow: 0 10px 10px 0 black;
+  transition: all 0.3s ease-in-out;
+}
+.backTop:hover
+{
+  background-color: orangered;
+  transform: scale(110%);
+}
+
+@media screen and (max-width:480px)
+{
+  .A-left
+  {
+    display: none;
+  }  
+  .A-right
+  {
+    margin-left: -20.5rem;
+  }
+}

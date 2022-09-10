@@ -1,0 +1,121 @@
+.navbar-container
+{
+  width:19rem;
+  height:50rem;
+  background-color: rgb(7, 52, 56);
+  color:whitesmoke;
+  display: flex;
+  flex-direction:column;
+}
+.ico
+{
+  position: absolute;
+  left: -10px;
+}
+.ico:hover
+{
+  color: orangered;
+  cursor: pointer;
+}
+.n-left
+{
+  position: relative;
+  left: 10px;
+  padding:20px;
+}
+.n-left>img
+{
+  position: relative;
+  width: 230px;
+  height: 230px;
+  border-radius: 100%;
+  box-shadow: 0 5px 10px 0 rgba(0,0,0,0.8);
+}
+.n-right
+{
+  position: relative;
+  top: -.5rem;
+  left: -.5rem;
+}
+.n-right>ul
+{
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  list-style: none;
+  text-align: justify;
+}
+li
+{
+  color: whitesmoke;
+  width: 160px;
+  padding: 3px;
+  transition: all 0.5s ease-in-out;
+  cursor: pointer;
+  border-radius: 0 20px 0 0 ;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+li:hover
+{
+  width: 200px;
+  color: rgb(5, 30, 35);
+  cursor: pointer;
+  font-weight: bold;
+  background-color:orangered;
+}
+.soci_me
+{
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  position: relative;
+  left: 40px;
+}
+.soci_me>:hover
+{
+  cursor: pointer;
+  color:orangered;
+}
+.backTop
+{
+  height: 40;
+  width: 40;
+  line-height: 40px;
+  border-radius: 4;
+  background-color: #1088e9;
+  color: #fff;
+  text-align: center;
+  font-size: 14;
+}
+.View-container
+{
+  position:fixed;
+  left: 40px;
+  top: 5.7rem;
+  width:fit-content;
+  height: fit-content;
+  padding: 30px;
+  border-radius:5px;
+  background-color:whitesmoke;
+}
+.View-container>h3
+{
+  color: rgb(102, 12, 54);
+  font-weight:100;
+  letter-spacing: 2px;
+  font-size:20px;
+  font-family:fantasy;
+  text-shadow: 0 5px 5px darkcyan;
+}
+
+
+@media screen and (max-width:480px)
+{
+  .navbar-container
+  {
+    display: none;
+    transform: scale(80%);
+    margin-top: -5rem;
+    margin-left: -3rem;
+  }
+}
